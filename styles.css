@@ -605,3 +605,189 @@
             font-weight: 500;
         }
 
+        /* ...existing code... */
+
+        .footer-section ul li i {
+            margin-right: 10px;
+            color: #ff4757;
+        }
+
+        .social-icons {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background-color: #ff4757;
+            border-radius: 4px; /* Changé de 50% à 4px pour un carré arrondi */
+            transition: all 0.3s ease;
+            border: 1px solid #ff4757; /* Ajout d'une bordure */
+        }
+
+        .social-icons a:hover {
+            background-color: transparent;
+            border-color: #fff;
+        }
+
+        .social-icons a:hover i {
+            color: #fff;
+        }
+
+        .social-icons i {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        /* ...existing code... */
+
+        .useful-links li a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .useful-links li a i {
+            font-size: 12px;
+            color: #ff4757;
+            transition: transform 0.3s ease;
+        }
+
+        .useful-links li a:hover i {
+            transform: translateX(3px);
+        }
+
+        /* ...existing code... */
+
+        .newsletter-form {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #fff;
+            background: #fff;
+            border-radius: 4px;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+            border-color: #ff4757;
+        }
+
+        .newsletter-button {
+            padding: 0.5rem 1rem;
+            background: #333;
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-button:hover {
+            background: #444;
+            border-color: #444;
+        }
+
+        .newsletter-button {
+            padding: 0.5rem 1rem;
+            background: #000000;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-button:hover {
+            background: #ff3244;
+        }
+
+        /* ...existing code... */
+
+        .bottom-sidebar {
+            background: #222;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .bottom-sidebar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .bottom-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bottom-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            position: relative;
+        }
+
+        .bottom-links a:not(:last-child)::after {
+            content: '|';
+            position: absolute;
+            right: -0.9rem;
+            color: #555;
+        }
+
+        .bottom-links a:hover {
+            color: #ff4757;
+        }
+
+        .copyright {
+            color: #777;
+            font-size: 0.85rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #333;
+        }
+
+        /* ...existing code... */
+
+        .copyright-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #777;
+            font-size: 0.85rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #333;
+        }
+
+        .copyright-text {
+            text-align: left;
+        }
+
+        .designer-text {
+            text-align: right;
+        }
+
+        .designer-text span {
+            color: #ff4757;
+        }
+
+        /* ...existing code... */
+
