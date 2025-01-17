@@ -1709,3 +1709,80 @@ body {
 
 /* ...existing code... */
 
+/* Alignement uniforme pour grands écrans */
+@media (min-width: 1600px) {
+    /* Container principal pour tous les contenus */
+    .global-container {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Alignement uniforme pour toutes les sections */
+    .banner-container,
+    .nav-container,
+    .main-content,
+    .category-sections,
+    .featured-section,
+    .read-more-section,
+    .footer-container,
+    .info-container,
+    .category-row,
+    .featured-articles,
+    .articles-grid {
+        max-width: 1500px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: calc((100% - 1500px) / 2);
+        padding-right: calc((100% - 1500px) / 2);
+    }
+
+    /* Ajustement des marges internes */
+    .category-row {
+        padding: 0 2rem;
+        margin: 0 auto 2rem;
+    }
+
+    /* Grille d'articles ajustée */
+    .articles-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    /* Ajustement des cartes d'articles */
+    .article-card {
+        height: 300px;
+    }
+
+    /* Section en vedette ajustée */
+    .featured-section {
+        height: 500px;
+    }
+
+    /* Ajustement du conteneur principal */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Sections pleine largeur */
+    .top-info-bar,
+    .top-banner,
+    .navbar,
+    .main-content,
+    .category-sections,
+    .footer {
+        width: 100vw;
+    }
+}
+
+/* Correction pour éviter les débordements horizontaux */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* ...existing code... */
+
