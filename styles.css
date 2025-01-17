@@ -1081,11 +1081,19 @@
         .copyright-text {
             padding-left: 2rem; /* Augmentation du padding à gauche */
             margin-left: -2rem; /* Marge négative pour pousser vers la gauche */
+            text-align: left;
+            color: #fff;
         }
 
         .designer-text {
             padding-right: 2rem; /* Augmentation du padding à droite */
             margin-right: -2rem; /* Marge négative pour pousser vers la droite */
+            text-align: right;
+            color: #fff;
+        }
+
+        .designer-text span {
+            color: #ff4757;
         }
 
         /* Responsive adjustments */
