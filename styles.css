@@ -258,6 +258,10 @@
 
         .article-card {
             position: relative;
+            background: white;
+            border: 1px solid #eee;
+            overflow: hidden;
+            height: 200px; /* Hauteur fixe pour maintenir la cohérence */
         }
 
         .article-image {
@@ -271,10 +275,11 @@
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 0.5rem;
-            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            padding: 1rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
             color: white;
             font-size: 0.9rem;
+            text-transform: capitalize; /* Pour capitaliser les titres */
         }
 
         @media (max-width: 768px) {
@@ -303,7 +308,7 @@
 
         .article-card img {
             width: 100%;
-            height: 150px;
+            height: 100%; /* Prend toute la hauteur du parent */
             object-fit: cover;
         }
 
@@ -375,7 +380,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.5rem; /* Réduit de 1rem à 0.5rem */
-            padding: 0.25rem; /* Réduit de 0.5rem à 0.25rem */
+            padding: 1.5rem; /* Augmentation du padding pour un meilleur alignement */
         }
 
         .featured-list-item {
@@ -416,6 +421,10 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
+            /* padding: 1.5rem; */
+            padding-right:  0px; /* Augmentation du padding gauche pour un meilleur alignement */
+            margin: -5px; /* Augmenté de -7px à -15px pour plus d'espace */
+            
         }
 
         /* Footer */
@@ -828,10 +837,9 @@
         .section-tabs-sidebar {
             display: flex;
             gap: 1rem;
-            background: #333;
+            background: linear-gradient(to right, #ff4757 25%, #333 25%);
             padding: 0.75rem;
-            position: relative;
-            border-bottom: 2px solid #ff4757;
+            border-bottom: 2px solid #333; /* Changé de #ff4757 à #333 */
         }
 
         .section-tabs-sidebar::before {
@@ -874,9 +882,17 @@
         .section-tabs-sidebar {
             display: flex;
             gap: 1rem;
-            background: linear-gradient(to right, #ff4757 30%, #333 30%);
+            background: linear-gradient(to right, #ff4757 25%, #333 25%);
             padding: 0.75rem;
-            border-bottom: 2px solid #ff4757;
+            border-bottom: 0px solid #333; /* Changé de #ff4757 à #333 */
+            position: relative;
+            justify-content: space-between;
+        }
+
+        .right-tabs {
+            display: flex;
+            gap: 2rem; /* Espacement entre Technology et Entertainment */
+            margin-right: 2rem; /* Marge à droite du conteneur */
         }
 
         .featured-section-wrapper:first-child .section-tabs-sidebar {
@@ -1165,6 +1181,16 @@
             align-items: center;
         }
 
+        .sidebar-links li a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar-links li a:hover {
+            color: #ff4757;
+        }
+
         .sidebar-links li:before {
             content: '+';
             margin-right: 8px;
@@ -1247,4 +1273,26 @@
                 margin-right: -15px; /* Ajout de la marge négative */
             }
         }
+
+        /* ...existing code... */
+
+        .sidebar-links li a {
+            color: #000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar-links li a:hover {
+            color: #ff4757;
+        }
+
+        /* ...existing code... */
+
+        @media (min-width: 1441px) {
+            .article-card {
+                height: 250px; /* Hauteur plus grande pour les grands écrans */
+            }
+        }
+
+        /* ...existing code... */
 
