@@ -1464,7 +1464,7 @@ body {
         }
         
         .contact-info a {
-            color: #fff;
+            color: #ff4757;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -1539,7 +1539,7 @@ body {
         }
         
         .contact-info a {
-            color: #fff;
+            color: #ff4757;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -1619,5 +1619,94 @@ body {
         padding: 0 2rem;
     }
 }
+
+/* ...existing code... */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dropdown-toggle i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    color: #333 !important;
+    padding: 0.75rem 1rem;
+    display: block;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #ff4757;
+    color: #fff !important;
+}
+
+.dropdown-menu li:last-child a {
+    border-bottom: none;
+}
+
+/* Ajustement responsive */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        width: 100%;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        color: #fff !important;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+}
+
+/* ...existing code... */
 
 
