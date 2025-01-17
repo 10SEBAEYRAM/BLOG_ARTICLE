@@ -1734,14 +1734,15 @@ body {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: calc((100% - 1500px) / 2);
-        padding-right: calc((100% - 1500px) / 2);
+        padding-left: calc((100% - 1400px) / 2);
+        padding-right: calc((100% - 1400px) / 2);
     }
 
     /* Ajustement des marges internes */
     .category-row {
-        padding: 0 2rem;
+        /* padding: 0 2rem; */
         margin: 0 auto 2rem;
+        margin-top: 72px;
     }
 
     /* Grille d'articles ajustée */
